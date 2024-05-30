@@ -1,0 +1,146 @@
+.header{
+    background: pink;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+}
+
+.header .inner-logo a{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.card-header{
+    color: rgb(248, 41, 76);
+    font-family: Arial;
+
+}
+    
+.color-button{
+    background-color: rgb(245, 69, 99);
+    color:rgb(250, 249, 249);
+    font-family: Arial;
+
+}
+.btn-css{
+    color:rgb(235, 71, 99);
+    border: 1px solid pink;
+}
+.btn-css:hover {
+    background-color: pink; /* Màu nền khi di chuột vào */
+    color: white; /* Màu chữ khi di chuột vào */
+}
+
+.btn-sua{
+    color: white;
+    background-color: rgb(251, 143, 161);
+}
+
+.page-link{
+    color:rgb(235, 71, 99);
+    border: 1px solid pink;
+}
+
+.page-item.active button.page-link {
+    background-color: pink; /* Màu nền khi nút được chọn */
+    color: white; /* Màu chữ khi nút được chọn */
+    border: pink;
+}
+.page-item button.page-link:hover {
+    background-color: rgb(244, 159, 159); /* Màu nền khi nút được chọn hoặc hover */
+    color: rgb(210, 31, 61); /* Màu chữ khi nút được chọn hoặc hover */
+}
+
+.body .sider{
+    font-family: Times New Roman;
+    font-size: 20px;
+    width: 150px;
+    background: pink;
+    color: #fff;
+    height: calc(100vh - 56px);
+    position: fixed;
+    top: 80px;
+    left: 0;
+
+}
+
+.body .sider .inner-menu  ul  li a{
+    border-bottom: 1px solid white
+}
+
+.body .main{
+    margin: 15px;
+    position: relative;
+    left: 150px;
+    width: calc(100% - 180px);
+}
+
+.sider .inner-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sider .inner-menu ul li a{
+    color: #fff;
+    display: block;
+    padding: 6px 10px;
+    border-bottom: 1px solid #515151;
+}
+
+/*show alert*/
+[show-alert]{
+    position: fixed;
+    top:70px;
+    right:15px;
+    z-index: 9999;
+}
+
+[show-alert].alert-hidden{
+    animation-name: alert-hidden;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes alert-hidden{
+    from{
+        right: 15px;
+    }
+    to {
+        right: -100%;
+        display: none;
+    }
+}
+
+[show-alert] [close-alert]{
+    background: white;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*image preview*/
+.image-preview{
+    width: 150px;
+    height: auto;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.image-preview[src=""]{
+    display: none;
+}
+
+
+

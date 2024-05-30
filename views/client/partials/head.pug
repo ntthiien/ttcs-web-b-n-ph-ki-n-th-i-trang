@@ -1,0 +1,11 @@
+include ../mixins/sub-menu.pug
+.head
+    .container 
+        .row.align-items-center.new-row-class
+            .col-8
+                .inner-menu 
+                    ul  
+                        each item in layoutProductsCategory
+                            li  
+                                a(href=`/products/${item.slug}`) #{item.title} 
+                                

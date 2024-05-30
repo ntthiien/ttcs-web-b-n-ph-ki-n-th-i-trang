@@ -1,0 +1,40 @@
+extends ../../layouts/default.pug
+include ../../mixins/box-head.pug
+include ../../mixins/product-layout.pug
+
+//- img(src="/images/bia2.jpg" alt="ảnh bìa")
+block main
+    //- img(src="/images/bia3.png" alt="ảnh bìa" class="img-bia")
+    .section-products-featured.my-5 
+        .container.my-3 
+            .row 
+
+                //- img(src="/images/bia2.jpg" alt="ảnh bìa")
+                .col-12 
+                    .img-slide 
+                        div(id="slideshow" class="bia-img")
+                            img(src="/images/bia8.jpg" class="active")
+                            img(src="/images/bia9.jpg")
+                            img(src="/images/bia10.png")
+                        div(id="static-image" class="static-image")
+                            ul 
+                                li 
+                                    img(src="/images/bia7.jpg")
+                                li 
+                                    img(src="/images/bia2.jpg")
+
+                    //- img(src="/images/bia8.jpg" alt="ảnh bìa" class="img-bia")
+                    +box-head("Nổi bật")
+        
+                +product-grip(productsFeatured)
+
+    .section-products-featured.my-5 
+        .container.my-3 
+            .row 
+                .col-12 
+                    +box-head("Mới")
+            
+                +product-grip(productsNew)
+    script(src="/js/img.js")
+        
+        
